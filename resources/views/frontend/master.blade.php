@@ -116,7 +116,7 @@
                     <img src="{{ url('homepage/images/phone.svg') }}" width="12" height="12" alt="phone" />
                     Hotline 24/7
                 </div>
-                <div class="phone-numbers">+(234) 907 635 1112 | +(234) 916 870 6000</div>
+                <div class="phone-numbers">+(234) 808 922 8381</div>
             </div>
             <div class="frame">
                 <div>Naira ▾</div>
@@ -207,8 +207,8 @@
             <div class="company-info">
                 <h3>BEST4UARENA</h3>
                 <p class="hotline">HOTLINE 24/7</p>
-                <p class="phone">+(234) 907 635 1112</p>
-                <p class="address">Somewhere in <br>Lagos, Nigeria</p>
+                <p class="phone">+(234) 808 922 8381</p>
+                <p class="address">Lagos, Nigeria</p>
                 <p class="email">info@best4uarena.com</p>
                 <div class="social-links">
                     <a href="#" aria-label="Twitter"><img src="{{ url('homepage/images/x.svg') }}" alt="x"/></a>

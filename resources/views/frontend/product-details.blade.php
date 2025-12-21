@@ -101,7 +101,7 @@
 
                 <div class="pd-contact">
                     <div class="pd-contact-label">Quick Order 24/7</div>
-                    <a href="tel:+2349076351112" class="pd-contact-number">+(234) 9076351112</a>
+                    <a href="tel:+2348089228381" class="pd-contact-number">+(234) 808 922 8381</a>
                 </div>
             </div>
         </div>

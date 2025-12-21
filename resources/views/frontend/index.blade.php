@@ -108,7 +108,7 @@
                         <div class="thumbnail-gallery" style="display: flex; flex-direction: column; gap: 10px; flex-shrink: 0;">
                             @foreach($images as $index => $image)
                             @php
-                            $thumbImageUrl = asset('uploads/products/' . $image);
+                            $thumbImageUrl = 'https://best4uarena.com/best4u_files/public/uploads/products/' . $image;
                             $borderColor = $index === 0 ? '#007bff' : 'transparent';
                             @endphp
                             <div class="group-prod-png thumbnail-image {{ $index === 0 ? 'active' : '' }}"
@@ -193,7 +193,7 @@
                         <div class="hurry-up-promotion">HURRY UP!<br />PROMOTION WILL<br />EXPIRE IN</div>
                         <div class="timer">
                             <div class="div-c-card">
-                                <div class="text-wrapper-2">52</div>
+                                <div class="text-wrapper-2">2</div>
                                 <div class="small-d">Days</div>
                             </div>
                             <div class="div-c-card">

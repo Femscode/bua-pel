@@ -23,7 +23,7 @@ class DatabaseSeeder extends Seeder
                 'name' => 'Admin User',
                 'password' => Hash::make('password'),
                 'role' => 'admin',
-                'phone' => '+2349076351112',
+                'phone' => '+2348089228381',
                 'address' => 'Best4UArena HQ'
             ]
         );

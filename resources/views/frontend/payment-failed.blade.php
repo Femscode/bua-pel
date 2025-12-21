@@ -72,7 +72,7 @@
                         <strong>Email:</strong> support@best4uarena.com
                     </div>
                     <div class="contact-item">
-                        <strong>Phone:</strong> +234 (0) 907 635 1112
+                        <strong>Phone:</strong> +234 808 922 8381
                     </div>
                 </div>
             </div>

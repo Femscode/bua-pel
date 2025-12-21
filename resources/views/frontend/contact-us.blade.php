@@ -75,11 +75,11 @@
     <div class="contact-info">
       <div class="info-item">
         <h3>Address</h3>
-        <p>Somewhere in <br>Lagos, Nigeria</p>
+        <p>Lagos, Nigeria</p>
       </div>
       <div class="info-item">
         <h3>Phone</h3>
-        <p>+(234) 9076351112<br>+(234) 9168706000</p>
+        <p>+(234)808 922 8381</p>
       </div>
       <div class="info-item">
         <h3>Email</h3>
