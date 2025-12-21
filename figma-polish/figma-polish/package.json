@@ -1,0 +1,25 @@
+{
+  "name": "figma-polish",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Batch-clean and make responsive the HTML/CSS exported from Figma plugins (Anima, Locofy, TeleportHQ, etc.)",
+  "scripts": {
+    "build": "node index.mjs",
+    "watch": "chokidar 'input/**/*' -c 'node index.mjs'",
+    "format": "prettier --write ."
+  },
+  "dependencies": {
+    "cheerio": "^1.0.0-rc.12",
+    "fs-extra": "^11.2.0",
+    "glob": "^11.0.0",
+    "postcss": "^8.4.41",
+    "autoprefixer": "^10.4.20",
+    "postcss-pxtorem": "^6.1.0",
+    "postcss-preset-env": "^9.5.15",
+    "cssnano": "^6.1.2"
+  },
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "prettier": "^3.3.3"
+  }
+}
