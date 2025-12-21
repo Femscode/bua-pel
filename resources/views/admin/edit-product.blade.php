@@ -70,7 +70,7 @@
               @endphp
               @foreach($images as $index => $image)
                 <div class="current-image-item" style="position: relative; border: 1px solid #ddd; border-radius: 8px; overflow: hidden;">
-                  <img src="{{ url('uploads/products/' . $image) }}" alt="Product image" style="width: 100%; height: 120px; object-fit: cover;">
+                  <img src="{{ 'https://best4uarena.com/best4u_files/public/uploads/products/' . $image }}" alt="Product image" style="width: 100%; height: 120px; object-fit: cover;">
                   <button type="button" class="remove-current-image" data-image="{{ $image }}" style="position: absolute; top: 5px; right: 5px; background: rgba(255,0,0,0.8); color: white; border: none; border-radius: 50%; width: 24px; height: 24px; cursor: pointer;">&times;</button>
                   <div style="padding: 5px; font-size: 10px; text-align: center; color: #666;">{{ basename($image) }}</div>
                 </div>

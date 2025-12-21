@@ -42,9 +42,9 @@
                 <div class="pd-thumbnails">
                     @foreach($images as $index => $image)
                     <div class="pd-thumb {{ $index === 0 ? 'active' : '' }}"
-                    data-image="{{ asset('uploads/products/' . $image) }}"
-                    onclick="switchMainImage('{{ asset('uploads/products/' . $image) }}', this)">
-                    <img src="{{ asset('uploads/products/' . $image) }}"
+                    data-image="{{ 'https://best4uarena.com/best4u_files/public/uploads/products/' . $image }}"
+                    onclick="switchMainImage('{{ 'https://best4uarena.com/best4u_files/public/uploads/products/' . $image }}', this)">
+                    <img src="{{ 'https://best4uarena.com/best4u_files/public/uploads/products/' . $image }}"
                         alt="Thumbnail">
                 </div>
                     @endforeach
@@ -53,7 +53,7 @@
 
                 <div class="pd-main-image-wrapper">
                     <div class="pd-main-image" id="mainProductImage" 
-                        data-initial-image="{{ $firstImage ? asset('uploads/products/' . $firstImage) : asset('homepage/images/default-product.png') }}">
+                        data-initial-image="{{ $firstImage ? 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage : asset('homepage/images/default-product.png') }}">
 
                         @if($product?->discount_price && $product->discount_price < $product->price)
                             <div class="pd-discount-badge">
@@ -156,7 +156,7 @@
     <div class="pd-description-section">
         <div class="pd-description-tabs">
             <div class="pd-description-tab" data-tab="description">DESCRIPTION</div>
-            <div class="pd-description-tab" data-tab="additional">SPECIFICATIONS</div>
+            <!-- <div class="pd-description-tab" data-tab="additional">SPECIFICATIONS</div> -->
         </div>
         <div class="pd-description-content">
             <div class="pd-description-text" id="description-content">

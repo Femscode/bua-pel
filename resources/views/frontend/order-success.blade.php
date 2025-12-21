@@ -66,7 +66,7 @@
                         @php
                             $images = $item->product->image ? json_decode($item->product->image, true) : [];
                             $firstImage = !empty($images) ? $images[0] : null;
-                            $imageUrl = $firstImage ? url('uploads/products/' . $firstImage) : url('homepage/images/home/solar1.png');
+                            $imageUrl = $firstImage ? 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage : url('homepage/images/home/solar1.png');
                         @endphp
                         <div class="item-image" style="background-image: url('{{ $imageUrl }}');"></div>
                         <div class="item-details">

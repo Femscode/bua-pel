@@ -149,7 +149,7 @@
                                     $images = json_decode($product->image, true);
                                     $firstImage = $images[0] ?? $product->image;
                                 @endphp
-                                @php $imageUrl = asset('uploads/products/' . $firstImage); @endphp
+                                @php $imageUrl = 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage; @endphp
                                 <div class="sh-categories-best-img" style="background-image: url('{{ $imageUrl }}'); background-size: cover; background-position: center;"></div>
                             </div>
                         </a>

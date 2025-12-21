@@ -120,7 +120,7 @@
 
                         <!-- Main Preview Image -->
                         @php
-                        $mainImageUrl = asset('uploads/products/' . $images[0]);
+                        $mainImageUrl = 'https://best4uarena.com/best4u_files/public/uploads/products/' . $images[0];
                         @endphp
                         <div class="main-image-container" style="flex: 1; height: 350px; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
                             <div class="group-png main-product-image" id="mainProductImage"
@@ -334,13 +334,7 @@
         // Image logic
         $imageUrl = asset('homepage/images/default-product.png');
         if ($firstImage) {
-             if (file_exists(public_path('uploads/products/' . $firstImage))) {
-                 $imageUrl = asset('uploads/products/' . $firstImage);
-             } elseif (file_exists(public_path('homepage/images/products/' . $firstImage))) {
-                 $imageUrl = asset('homepage/images/products/' . $firstImage);
-             } else {
-                 $imageUrl = 'https://placehold.co/400x400/e8dcb5/004d40?text=' . urlencode($product->name);
-             }
+             $imageUrl = 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage;
         }
         @endphp
             <div class="trending-products-group">

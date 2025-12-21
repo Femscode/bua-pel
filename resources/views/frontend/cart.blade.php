@@ -22,7 +22,7 @@
                 @php
                     $images = $item->product->image ? json_decode($item->product->image, true) : [];
                     $firstImage = !empty($images) ? $images[0] : null;
-                    $imageUrl = $firstImage ? asset('uploads/products/' . $firstImage) : asset('homepage/images/default-product.png');
+                    $imageUrl = $firstImage ? 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage : asset('homepage/images/default-product.png');
                 @endphp
                 <div class="ct-cart-product-img" style="background-image: url('{{ $imageUrl }}'); background-size: cover; background-position: center;"></div>
                 <div class="ct-cart-product-info">

@@ -104,7 +104,7 @@
                                         $images = json_decode($product->image, true);
                                         $firstImage = is_array($images) ? $images[0] : $product->image;
                                     @endphp
-                                    <img src="{{ url('uploads/products/' . $firstImage) }}" alt="{{ $product->name }}" class="admin-table-image">
+                                    <img src="{{ 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage }}" alt="{{ $product->name }}" class="admin-table-image">
                                 @else
                                 <div class="admin-no-image">
                                     <i class="fas fa-box"></i>

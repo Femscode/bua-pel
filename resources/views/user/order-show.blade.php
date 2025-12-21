@@ -105,7 +105,7 @@
                                 $images = json_decode($item->product->image, true);
                                 $firstImage = is_array($images) && !empty($images) ? $images[0] : $item->product->image;
                             @endphp
-                            <img src="{{ url('uploads/products/' . $firstImage) }}" alt="{{ $item->product->name }}" />
+                            <img src="{{ 'https://best4uarena.com/best4u_files/public/uploads/products/' . $firstImage }}" alt="{{ $item->product->name }}" />
                         @else
                             <div class="no-image">
                                 <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
