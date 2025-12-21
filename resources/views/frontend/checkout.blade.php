@@ -165,8 +165,8 @@
             <div class="ck-checkout-payment">
                 <div class="ck-checkout-payment-options">
                     <div class="ck-checkout-payment-option">
-                        <input type="radio" id="whatsapp" name="payment_method" value="whatsapp" class="ck-checkout-radio" form="checkout-form">
-                        <label for="whatsapp" class="ck-checkout-payment-label">Order via WhatsApp</label>
+                        <input disabled type="radio" id="whatsapp" name="payment_method" value="whatsapp" class="ck-checkout-radio" form="checkout-form">
+                        <label for="whatsapp" class="ck-checkout-payment-label">Pay Online</label>
                     </div>
                     <div class="ck-checkout-payment-option">
                         <input checked type="radio" id="bank-transfer" name="payment_method" value="bank_transfer" class="ck-checkout-radio" form="checkout-form">

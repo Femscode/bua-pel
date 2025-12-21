@@ -233,13 +233,12 @@
         </div> -->
         </div>
         <div class="footer-bottom">
-            <p>© 2025 Best4UArena. All Rights Reserved</p>
+            <p style="color:#fff">© 2025 Best4UArena. All Rights Reserved</p>
             <div class="payment-methods">
                 <span><img src="{{ url('homepage/images/paypal.svg') }}" alt="x"/></span>
                 <span><img src="{{ url('homepage/images/visa.svg') }}" alt="x"/></span>
                 <span><img src="{{ url('homepage/images/mastercard.svg') }}" alt="x"/></span>
                 <span><img src="{{ url('homepage/images/paypal.svg') }}" alt="x"/></span>
-                <span><img src="{{ url('homepage/images/klarna.svg') }}" alt="x"/></span>
             </div>
         </div>
     </footer>

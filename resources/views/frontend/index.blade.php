@@ -87,7 +87,7 @@
             <div class="main">
                 <div class="frame-2">
                     <div class="heading-deals-of">DEALS OF THE DAY</div>
-                    <div class="link-view-all">View All</div>
+                    <a href='/shop' class="link-view-all">View All</a>
                 </div>
                 <div class="symbol">→</div>
             </div>
@@ -319,7 +319,7 @@
         <div class="trending-products-heading-wrapper">
             <div class="trending-products-heading">TRENDING PRODUCTS</div>
         </div>
-        <div class="trending-products-view-all">View All</div>
+        <a href="/shop" class="trending-products-view-all">View All</a>
     </div>
 
     <div class="trending-products-tabpanel">
