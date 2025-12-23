@@ -60,32 +60,7 @@
                     <div class="admin-form-error">{{ $message }}</div>
                 @enderror
             </div> -->
-            <div class="admin-form-group admin-form-group-full">
-                <label for="image" class="admin-form-label">Category Image</label>
-                <div class="admin-file-upload">
-                    <div class="admin-file-drop-zone" id="dropZone">
-                        <input type="file" class="admin-file-input @error('image') error @enderror" 
-                               id="image" name="image" accept="image/*">
-                        <div class="admin-file-drop-content">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                            <p>Drop image here or <span class="admin-file-browse">browse</span></p>
-                            <small>Supported formats: JPG, PNG, GIF. Max size: 2MB</small>
-                        </div>
-                    </div>
-                    @error('image')
-                        <div class="admin-form-error">{{ $message }}</div>
-                    @enderror
-                    
-                    <!-- Image Preview -->
-                    <div id="imagePreview" class="admin-image-preview">
-                        <img id="previewImg" src="" alt="Preview" class="admin-preview-img">
-                        <button type="button" class="admin-btn admin-btn-danger admin-btn-sm" id="removeImage">
-                            <i class="fas fa-times"></i>
-                            Remove
-                        </button>
-                    </div>
-                </div>
-            </div>
+            
             <div class="admin-form-actions">
                 <button type="submit" class="admin-btn admin-btn-primary">
                     <i class="fas fa-save"></i>

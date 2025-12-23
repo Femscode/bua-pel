@@ -46,12 +46,12 @@ class CategoryController extends Controller
         ];
         
         // Handle image upload
-        if ($request->hasFile('image')) {
-            $image = $request->file('image');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('uploads/categories'), $imageName);
-            $categoryData['image'] = 'uploads/categories/' . $imageName;
-        }
+        // if ($request->hasFile('image')) {
+        //     $image = $request->file('image');
+        //     $imageName = time() . '.' . $image->getClientOriginalExtension();
+        //     $image->move(public_path('uploads/categories'), $imageName);
+        //     $categoryData['image'] = 'uploads/categories/' . $imageName;
+        // }
         
         ProductCategory::create($categoryData);
         
@@ -94,17 +94,17 @@ class CategoryController extends Controller
         ];
         
         // Handle image upload
-        if ($request->hasFile('image')) {
-            // Delete old image if exists
-            if ($category->image && file_exists(public_path($category->image))) {
-                unlink(public_path($category->image));
-            }
+        // if ($request->hasFile('image')) {
+        //     // Delete old image if exists
+        //     if ($category->image && file_exists(public_path($category->image))) {
+        //         unlink(public_path($category->image));
+        //     }
             
-            $image = $request->file('image');
-            $imageName = time() . '.' . $image->getClientOriginalExtension();
-            $image->move(public_path('uploads/categories'), $imageName);
-            $categoryData['image'] = 'uploads/categories/' . $imageName;
-        }
+        //     $image = $request->file('image');
+        //     $imageName = time() . '.' . $image->getClientOriginalExtension();
+        //     $image->move(public_path('uploads/categories'), $imageName);
+        //     $categoryData['image'] = 'uploads/categories/' . $imageName;
+        // }
         
         $category->update($categoryData);
         

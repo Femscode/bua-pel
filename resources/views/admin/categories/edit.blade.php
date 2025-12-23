@@ -50,53 +50,8 @@
                     @enderror
                 </div>
             </div>
-            <!-- <div class="admin-form-group admin-form-group-full">
-                <label for="description" class="admin-form-label">Description</label>
-                <textarea class="admin-form-textarea @error('description') error @enderror" 
-                          id="description" name="description" rows="4" 
-                          placeholder="Enter category description...">{{ old('description', $category->description) }}</textarea>
-                @error('description')
-                    <div class="admin-form-error">{{ $message }}</div>
-                @enderror
-            </div> -->
-            <div class="admin-form-group admin-form-group-full">
-                <label for="image" class="admin-form-label">Category Image</label>
-                <div class="admin-file-upload">
-                    @if($category->image)
-                        <div class="admin-current-image">
-                            <img src="{{ url($category->image) }}" alt="Current Image" class="admin-current-img">
-                            <div class="admin-current-image-overlay">
-                                <span class="admin-current-image-label">Current Image</span>
-                                <button type="button" class="admin-btn admin-btn-danger admin-btn-sm" id="removeCurrentImage">
-                                    <i class="fas fa-trash"></i>
-                                    Remove
-                                </button>
-                            </div>
-                        </div>
-                    @endif
-                    <div class="admin-file-drop-zone" id="dropZone">
-                        <input type="file" class="admin-file-input @error('image') error @enderror" 
-                               id="category-image" name="image" accept="image/*">
-                        <div class="admin-file-drop-content">
-                            <i class="fas fa-cloud-upload-alt"></i>
-                            <p>Drop new image here or <span class="admin-file-browse" id="upload-button">browse</span></p>
-                            <small>Supported formats: JPG, PNG, GIF. Max size: 2MB</small>
-                        </div>
-                    </div>
-                    @error('image')
-                        <div class="admin-form-error">{{ $message }}</div>
-                    @enderror
-                    
-                    <!-- New Image Preview -->
-                    <div id="file-preview" class="admin-image-preview" style="display: none;">
-                        <img id="previewImg" src="" alt="Preview" class="admin-preview-img">
-                        <button type="button" class="admin-btn admin-btn-danger admin-btn-sm" id="removeImage">
-                            <i class="fas fa-times"></i>
-                            Remove
-                        </button>
-                    </div>
-                </div>
-            </div>
+          
+            
             
             @if($category->products()->count() > 0)
             <div class="admin-form-group admin-form-group-full">

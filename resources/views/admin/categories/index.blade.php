@@ -31,7 +31,6 @@
         <table class="admin-table">
             <thead>
                 <tr>
-                    <th>Image</th>
                     <th>Name</th>
                     <th>Products</th>
                     <th>Actions</th>
@@ -40,15 +39,7 @@
             <tbody>
                 @forelse($categories as $category)
                 <tr>
-                    <td class="image-cell">
-                        @if($category->image)
-                        <img src="{{ url($category->image) }}" alt="{{ $category->name }}" class="admin-table-image">
-                        @else
-                        <div class="admin-no-image">
-                            <i class="fas fa-image"></i>
-                        </div>
-                        @endif
-                    </td>
+                   
                     <td>{{ $category->name }}</td>
                     <td>{{ $category->products()->count() }}</td>
                     <td class="actions-cell">
