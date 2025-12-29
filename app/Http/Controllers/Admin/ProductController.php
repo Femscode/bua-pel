@@ -48,7 +48,17 @@ class ProductController extends Controller
         ]);
 
         $data = $request->all();
-        $data['slug'] = Str::slug($request->name);
+        
+        $slug = Str::slug($request->name);
+        $name = $request->name;
+
+        while (Product::where('slug', $slug)->exists()) {
+            $name = $name . ' -new';
+            $slug = Str::slug($name);
+        }
+        
+        $data['name'] = $name;
+        $data['slug'] = $slug;
         
         // Handle image upload
         
@@ -108,7 +118,16 @@ class ProductController extends Controller
         ]);
 
         $data = $request->all();
-        $data['slug'] = Str::slug($request->name);
+        $slug = Str::slug($request->name);
+        $name = $request->name;
+
+        while (Product::where('slug', $slug)->where('id', '!=', $product->id)->exists()) {
+            $name = $name . ' -new';
+            $slug = Str::slug($name);
+        }
+        
+        $data['name'] = $name;
+        $data['slug'] = $slug;
         
         
           if ($request->hasFile('image')) {
